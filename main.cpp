@@ -31,6 +31,8 @@ int main(int argc, char** argv) {
     /*? Parce qu'on change directement la couleur des sommets adjacents, c'est comme si on les 
      marquait comme visités ?*/
     
+    //TETSTETSTETSTTE
+    
     //on colore le centre de la pomme
     dfs.iterativeVisit( G.idx(250, 400), [&G, &image] (int v) {
         image.set_pixel( G.x(v), G.y(v), 250, 150, 64);
