@@ -7,6 +7,11 @@ GraphFromImage::GraphFromImage(const bitmap_image& i) : image(i) {
 // throws std::out_of_range
 GraphFromImage::Iterable GraphFromImage::adjacent(int v) const {
    
+   /* v est un sommet mais comment il est représenté ? Si on le représente 
+    avec son idx on peut facilement le faire */
+   
+   
+   
 }
 
 // throws std::out_of_range
