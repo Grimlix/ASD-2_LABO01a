@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="ASD-2_LABO01"
+                   displayName="ASD-2_LABO01"
+                   projectFiles="true">
+      <logicalFolder name="dist" displayName="dist" projectFiles="true">
+        <logicalFolder name="Debug" displayName="Debug" projectFiles="true">
+          <logicalFolder name="MinGW-Windows"
+                         displayName="MinGW-Windows"
+                         projectFiles="true">
+            <itemPath>dist/Debug/MinGW-Windows/asd-2_labo01.exe</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>.dep.inc</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>bitmap_image.hpp</itemPath>
+      <itemPath>goal.bmp</itemPath>
+      <itemPath>input.bmp</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
@@ -29,6 +47,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -39,11 +60,26 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path=".dep.inc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="GraphFromImage.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GraphFromImage.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ParcoursEnProfondeur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bitmap_image.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dist/Debug/MinGW-Windows/asd-2_labo01.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="goal.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.bmp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -68,11 +104,26 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path=".dep.inc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="GraphFromImage.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="GraphFromImage.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ParcoursEnProfondeur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bitmap_image.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dist/Debug/MinGW-Windows/asd-2_labo01.exe"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="goal.bmp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.bmp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

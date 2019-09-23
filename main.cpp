@@ -32,6 +32,7 @@ int main(int argc, char** argv) {
      marquait comme visités ?*/
     
     
+    
     //on colore le centre de la pomme
     dfs.iterativeVisit( G.idx(250, 400), [&G, &image] (int v) {
         image.set_pixel( G.x(v), G.y(v), 250, 150, 64);

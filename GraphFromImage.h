@@ -24,12 +24,15 @@ public:
     // Retourne les sommets adjacents au sommet v, THROWS std::out_of_range
     Iterable adjacent(int v) const;
     
+    
+    
+    
+    
     // Retourne le nombre de sommets
     int V() const;
     
     // Méthodes permettants de passer de x/y à idx et vice-versa
     // THROWS std::out_of_range
-    
     // Index du sommet représentant le pixel a la position x, y
     int idx(int x, int y) const;
     // Coordonnée x du sommet idx
