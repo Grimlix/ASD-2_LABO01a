@@ -23,11 +23,7 @@ public:
     
     // Retourne les sommets adjacents au sommet v, THROWS std::out_of_range
     Iterable adjacent(int v) const;
-    
-    
-    
-    
-    
+
     // Retourne le nombre de sommets
     int V() const;
     
@@ -43,6 +39,8 @@ public:
 // ELEMENTS PRIVES: LIBRE D'AJOUTER DES ELEMENTS
 private:
     const bitmap_image& image;
+    
+    bool memeCouleur(int s1, int s2) const;
 };
 
 #endif	/* GRAPHFROMIMAGE_H */
