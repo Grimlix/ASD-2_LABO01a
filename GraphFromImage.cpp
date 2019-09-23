@@ -6,17 +6,37 @@ GraphFromImage::GraphFromImage(const bitmap_image& i) : image(i) {
 
 // throws std::out_of_range
 GraphFromImage::Iterable GraphFromImage::adjacent(int v) const {
-   
-   /* v est un sommet mais comment il est représenté ? Si on le représente 
-    avec son idx on peut facilement le faire */
+   Iterable listAdj;
    
    
+   // verifier si pixel et noir sinon on laisse tomber
    
+   //adj up
+   int nouvelAdj = v - image.width();
+   if(!(nouvelAdj  < 0)){
+      listAdj.push_back(nouvelAdj);
+   }
+   //adj left
+   if(!(v % image.width() == 0)){
+      nouvelAdj = v - 1;
+      listAdj.push_back(nouvelAdj);
+   }
+   //adj right
+   nouvelAdj = v + 1;
+   if(!(nouvelAdj % image.width() == 0)){
+      listAdj.push_back(nouvelAdj);
+   }
+   //adj down
+   nouvelAdj = v + image.width();
+   if(!(nouvelAdj > (image.width() * image.height()))){
+      listAdj.push_back(nouvelAdj);
+   }
+   return listAdj;
 }
 
 // throws std::out_of_range
 int GraphFromImage::idx(int x, int y) const {
-   return y * 10 + x; 
+   return y * image.width() + x; 
 }
 
 // throws std::out_of_range
